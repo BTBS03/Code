@@ -1,0 +1,12 @@
+# x = points per win y = poins per loss z = cost per character
+def cost(x,y,z):
+  x = int(raw_input("How many points do you get when you win a match"))
+  y = int(raw_input("How many points do you get when you lose a match"))
+  z = int(raw_input("How many points do you need to get a character"))
+  costxz = z / x
+  costyz = z / y 
+  costxyz = int(costxz * 0.3 + costyz *0.70)
+  print "you would need %s wins or %s losses to get the character, or if you win 30%% and lose 70%% of the time you would have to play %s games " %(costxz, costyz, costxyz)
+    
+cost(400,200,22000)
+#This is Python(not python3)
